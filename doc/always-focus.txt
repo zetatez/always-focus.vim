@@ -1,0 +1,84 @@
+*always-focus.txt* always focus
+                                                                *always-focus*
+
+Author: Dionysus <zetatez@icloud.com>
+Repo:   https://github.com/zetatez/always-focus.vim
+
+==============================================================================
+TABLE OF CONTENTS                                               *always-focus*
+
+INTRODUCTION.......................................|always-focus-introduction|
+USAGE..............................................|always-focus-introduction|
+CONFIGURATION......................................|always-focus-introduction|
+    g:always_focus_disable............................|g:always_focus_disable|
+    g:always_focus_disable_vertical..........|g:always_focus_disable_vertical|
+    g:always_focus_disable_horizontal......|g:always_focus_disable_horizontal|
+    g:always_focus_disable............................|g:always_focus_disable|
+    g:always_focus_min_win............................|g:always_focus_min_win|
+    g:always_focus_min_win_fullscreen......|g:always_focus_min_win_fullscreen|
+    g:always_focus_width................................|g:always_focus_width|
+    g:always_focus_height..............................|g:always_focus_height|
+    g:always_focus_disable_float................|g:always_focus_disable_float|
+    g:always_focus_disable_diff..................|g:always_focus_disable_diff|
+    g:always_focus_disabled_filetypes......|g:always_focus_disabled_filetypes|
+    g:always_focus_disabled_buftypes........|g:always_focus_disabled_buftypes|
+    g:always_focus_disabled_filenames......|g:always_focus_disabled_filenames|
+
+==============================================================================
+INTRODUCTION                                       *always-focus-introduction*
+
+==============================================================================
+USAGE                                                     *always-focus-usage*
+
+==============================================================================
+CONFIGURATION                                     *always-focus-configuration*
+
+g:always_focus_disable                                *g:always_focus_disable*
+
+    Default value is 0.
+
+g:always_focus_disable_vertical              *g:always_focus_disable_vertical*
+
+    Default value is 0.
+
+g:always_focus_disable_horizontal          *g:always_focus_disable_horizontal*
+
+    Default value is 0.
+
+g:always_focus_min_win                                *g:always_focus_min_win*
+
+    Default value is 4.
+
+g:always_focus_min_win_fullscreen          *g:always_focus_min_win_fullscreen*
+
+    Default value is 10.
+
+g:always_focus_width                                    *g:always_focus_width*
+
+    Default value is 124.
+
+g:always_focus_height                                  *g:always_focus_height*
+
+    Default value is 26.
+
+g:always_focus_disable_float                    *g:always_focus_disable_float*
+
+    Default value is 1.
+
+g:always_focus_disable_diff                      *g:always_focus_disable_diff*
+
+    Default value is 1.
+
+g:always_focus_disabled_filetypes          *g:always_focus_disabled_filetypes*
+
+    Default value is [].
+
+g:always_focus_disabled_buftypes            *g:always_focus_disabled_buftypes*
+
+    Default value is [].
+
+g:always_focus_disabled_filenames          *g:always_focus_disabled_filenames*
+
+    Default value is [].
+
+==============================================================================
