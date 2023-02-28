@@ -108,6 +108,9 @@ function! AlwaysFocus()
   endif
 
   if winnr('$') < g:always_focus_min_win
+    exec "set winwidth=1"
+    exec "set winheight=1"
+    wincmd =
     return
   endif
 
