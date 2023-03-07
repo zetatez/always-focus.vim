@@ -99,7 +99,7 @@ function! AlwaysFocus()
   endif
 
   if len(g:always_focus_disabled_filenames) > 0
-    let l:filename = expand('%:p')
+    let l:filename = expand('%:t')
     for l:disabled_filename in g:always_focus_disabled_filenames
       if match(l:filename, l:disabled_filename) > -1
         return
