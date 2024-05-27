@@ -5,8 +5,8 @@
 " let g:always_focus_disable = 0
 " let g:always_focus_disable_vertical = 0
 " let g:always_focus_disable_horizental = 0
-" let g:always_focus_min_win = 5
-" let g:always_focus_min_win_fullscreen = 10
+" let g:always_focus_min_win = 3
+" let g:always_focus_min_win_fullscreen = 8
 " let g:always_focus_width = 124
 " let g:always_focus_height = 26
 " let g:always_focus_disable_float = 1
@@ -70,13 +70,6 @@ if !exists('g:always_focus_disabled_filenames')
   let g:always_focus_disabled_filenames = []
 endif
 
-function! AlwaysFocusToggle()
-  let g:always_focus_disable = !g:always_focus_disable
-  if g:always_focus_disable
-    wincmd =
-  endif
-endfunction
-
 function! AlwaysFocus()
   if g:always_focus_disable
     return
@@ -108,13 +101,10 @@ function! AlwaysFocus()
   endif
 
   if winnr('$') < g:always_focus_min_win
-    " exec "set winwidth=1"
-    " exec "set winheight=1"
-    " wincmd =
     return
   endif
 
-  if winnr('$') > g:always_focus_min_win_fullscreen && !(g:always_focus_min_win > g:always_focus_min_win_fullscreen)
+  if winnr('$') >= g:always_focus_min_win_fullscreen
     if !g:always_focus_disable_vertical
       wincmd |
     endif
@@ -134,11 +124,18 @@ function! AlwaysFocus()
     exec "set winheight=".g:always_focus_height
   endif
 
-  " wincmd =
+  wincmd =
 endfunction
 
 augroup AlwaysFocus
   autocmd!
   autocmd! WinEnter * :call AlwaysFocus()
 augroup END
+
+function! AlwaysFocusToggle()
+  let g:always_focus_disable = !g:always_focus_disable
+  if g:always_focus_disable
+    wincmd =
+  endif
+endfunction
 
